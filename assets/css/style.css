@@ -180,7 +180,8 @@ sub { bottom: -.25em; }
 
   header{ 
     width: 100%; 
-    /* position: absolute; */
+    position: absolute;
+    z-index: 1;
   }
 
   header .wrapper {
@@ -222,7 +223,7 @@ sub { bottom: -.25em; }
     font-size: 11px;
   }
 
-  /*------------ Navigation Bar ---------------*/
+  /*------------ Navigation Bar starts here ---------------*/
 
   .primary-navbar{ background-color: rgba(44, 127, 198, 0.5); }
   .primary-navbar .wrapper { padding: 9px 0; }
@@ -241,6 +242,45 @@ sub { bottom: -.25em; }
   }
 
   .menu-link { color: #fff; }
+
 /* ==========================================================================
   Header ends here
+  ========================================================================== */
+/* ==========================================================================
+  Main starts here
+  ========================================================================== */
+  
+  /*------------ Banner ends here ---------------*/
+
+  .banner { position: relative; }
+  
+  .banner-image, .banner-image img { width: 100%; }
+
+  .banner-image img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner-text { 
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+  }
+
+  .banner-headline {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .banner-info {
+    width: 50%;
+    color: #64b6e2;
+    font-size: 22px;
+  }
+
+/* ==========================================================================
+  Main ends here
   ========================================================================== */
