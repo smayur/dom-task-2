@@ -155,3 +155,92 @@ sub { bottom: -.25em; }
   font-style: normal;
   font-weight: bold;
 }
+
+/* ==========================================================================
+  common styling starts
+  ========================================================================== */
+   * { box-sizing: border-box; }
+   body { font-family: poppins, sans-serif; }
+ 
+   .wrapper {
+     width: 50.85%;
+     max-width: 1349px;
+     margin: 0 auto;
+   }
+ 
+   a { text-decoration: none; }
+   ul { list-style: none; }
+ 
+/* ==========================================================================
+  common styling ends
+  ========================================================================== */
+/* ==========================================================================
+  Header starts here
+  ========================================================================== */
+
+  header{ 
+    width: 100%; 
+    /* position: absolute; */
+  }
+
+  header .wrapper {
+    padding-top: 29px;
+    padding-bottom: 33px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 34px;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+  }
+
+  .logo::after {
+    content: '';
+    padding: 5px;
+    border-top: 3px solid #3cb6eb;
+    border-right: 3px solid #3cb6eb;
+    border-radius: 2px;
+    position: absolute;
+    top: 5px;
+  }
+
+  .search {
+    padding: 8px 20px 8px 10px;
+    border: 1px solid #369fe3;
+    font-size: 11px;
+  }
+
+  .submit {
+    padding: 9px 14px;
+    border: none;
+    float: right;
+    background: #369fe3;
+    color: #fff;
+    font-size: 11px;
+  }
+
+  /*------------ Navigation Bar ---------------*/
+
+  .primary-navbar{ background-color: rgba(44, 127, 198, 0.5); }
+  .primary-navbar .wrapper { padding: 9px 0; }
+  
+  .menu-list {
+    display: flex; 
+    font-size: 12px;
+  }
+
+  .menu:first-child { margin-left: 12px; }
+
+  .menu:not(:last-child)::after {
+    content: '';
+    border-left: 1px solid #fff;
+    margin: 0 10px;
+  }
+
+  .menu-link { color: #fff; }
+/* ==========================================================================
+  Header ends here
+  ========================================================================== */
