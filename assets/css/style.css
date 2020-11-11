@@ -250,7 +250,7 @@ sub { bottom: -.25em; }
   Main starts here
   ========================================================================== */
   
-  /*------------ Banner ends here ---------------*/
+  /*------------ Banner starts here ---------------*/
 
   .banner { position: relative; }
   
@@ -279,6 +279,63 @@ sub { bottom: -.25em; }
     width: 50%;
     color: #64b6e2;
     font-size: 22px;
+  }
+
+  /*------------ newsletter form section start here ---------------*/
+
+  .newsletter-form { width: 100%; }
+  .newsletter-form .wrapper { padding: 28px 0 104px 0;}
+
+  .breadcrumps { 
+    display: flex;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .breadcrumps li:not(:last-child)::after {
+    content: '>';
+    margin: 0 8px;
+  }
+
+  .breadcrumps .active { font-weight: bold; }
+
+  .newsletter-form-headline {
+    margin-top: 19px;
+    font-size: 25px;
+    color: #457ab9;
+  }
+
+  .input-groups { 
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .input-group { margin-top: 19px; }
+  .label { margin-bottom: 9px; }
+
+  input[type=text], input[type=email], select { width: 32.06%; }
+
+  select { 
+    padding: 5px;
+    border: 1px solid #369fe3;
+    border-radius: 2px;
+    background: #369fe3;
+    color: #fff;
+  }
+
+  input[type=text], input[type=email] {
+    padding: 7.5px;
+    border: 1px solid #ddd; 
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #ddd, 1px 1px 2px #ddd inset;
+    font-size: 12px;
+  }
+
+  .input-group .submit {
+    padding: 9px 48px;
+    border-radius: 2px;
+    margin-top: 15px;
+    float: left;
   }
 
 /* ==========================================================================
