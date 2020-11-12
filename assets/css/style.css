@@ -163,9 +163,9 @@ sub { bottom: -.25em; }
    body { font-family: poppins, sans-serif; }
  
    .wrapper {
-      width: 51.85%;
-     max-width: 1349px;
-     margin: 0 auto;
+    width: 50.85%;
+    max-width: 1349px;
+    margin: 0 auto;
    }
  
    a { text-decoration: none; }
@@ -311,6 +311,7 @@ sub { bottom: -.25em; }
 
   .input-group { margin-top: 19px; }
   .label { margin-bottom: 9px; }
+  .form-text { line-height: 1.6; }
 
   input[type=text], input[type=email], select { width: 32.06%; }
 
@@ -323,7 +324,7 @@ sub { bottom: -.25em; }
   }
 
   input[type=text], input[type=email] {
-    padding: 7.5px;
+    padding: 7px;
     border: 1px solid #ddd; 
     border-radius: 2px;
     box-shadow: 1px 1px 2px #ddd, 1px 1px 2px #ddd inset;
@@ -359,7 +360,7 @@ sub { bottom: -.25em; }
   }
 
   footer .wrapper { 
-    padding: 37px 0 41px 0;
+    padding: 37px 0 49px 0;
     display: flex; 
     color: #fff;
   }
@@ -388,7 +389,7 @@ sub { bottom: -.25em; }
   .footer-logo .title::before {
     content: '';
     width: 80%;
-    border-top: 1px solid #fff;
+    border-top: 2px solid #2162a3;
     position: absolute;
     top: 0;
   }
@@ -407,7 +408,7 @@ sub { bottom: -.25em; }
   }
 
   .secondary-navbar .menu {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     font-size: 12px;
   }
 
@@ -415,8 +416,41 @@ sub { bottom: -.25em; }
   /*------------ footer icons start here ---------------*/
 
   .icons { display: flex; }
+  .icon { margin-right: 10px; }
 
- 
+  .icon:not(:last-child) span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+    background: #fff;
+  }
+
+  .icon:not(:nth-child(3)):not(:nth-child(4)) span::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .icon:nth-child(3) span::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-28%, -50%);
+    font-size: 22px;
+  }
+
+  .fa-linkedin-in { color: #2a79b6; }
+  .fa-twitter { color: #39a1f2; }
+  .fa-caret-right { color: #f62100; }
+
+  .fa-facebook { 
+    color: #fff; 
+    font-size: 30px;
+  }
 
   /*------------ footer icons ends here ---------------*/
   /*------------ footer low priority navigation start here ---------------*/ 
@@ -450,6 +484,22 @@ sub { bottom: -.25em; }
   .copy-right-text { font-size: 10px; }
 
   /*------------ footer low priority navigation ends here ---------------*/ 
+
+  .up-arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 34px;
+    right: 27px;
+    font-size: 19px;
+    font-weight: bold;
+    background: #9f9f9f;
+    color: #fff;
+  }
 
 /* ==========================================================================
   Footer ends here
