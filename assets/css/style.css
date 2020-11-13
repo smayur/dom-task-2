@@ -235,17 +235,34 @@ sub { bottom: -.25em; }
 
   .search-field .submit { float: right; }
 
-  .burger { display: none; }
+  .burger { 
+    float: right;
+    display: none; 
+  }
 
   .burger div {
     width: 20px;
     height: 3px;
-    background: #fff;
-    margin: 3px;
     border-radius: 50px;
+    margin: 3px;
+    background: #fff;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  .navtoggle .line:first-child { 
+    -webkit-transform: rotate(-45deg) translate(-3px,5.5px); 
+    -ms-transform: rotate(-45deg) translate(-3px,5.5px); 
+    transform: rotate(-45deg) translate(-3px,5.5px); 
+  }
+
+  .navtoggle .line:nth-child(2) { opacity: 0; }
+
+  .navtoggle .line:nth-child(3) { 
+    -webkit-transform: rotate(45deg) translate(-3px,-5.5px); 
+    -ms-transform: rotate(45deg) translate(-3px,-5.5px); 
+    transform: rotate(45deg) translate(-3px,-5.5px); 
   }
 
   /*------------ Navigation Bar starts here ---------------*/
@@ -578,8 +595,15 @@ sub { bottom: -.25em; }
   Media queries starts here
   ========================================================================== */
 
+  @media screen and (max-width: 1280px) {
+    .primary-navbar .menu:first-child { margin-left: 2px; }
+    .primary-navbar .menu:not(:last-child)::after { margin: 0px 5px; }
+  }
+
+  /*------------ media queries 995 starts here ---------------*/
+
   @media screen and (max-width: 995px) {
-    
+
     header .wrapper {
       padding-top: 23px;
       padding-bottom: 23px;
